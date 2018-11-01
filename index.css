@@ -1,0 +1,156 @@
+input[type='radio']
+{
+    display: none;
+}
+
+label[for]
+{
+    cursor: pointer;
+}
+
+.button-tile
+{
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url(./img/list.svg);
+    background-size: 100%;
+}
+
+.button-list
+{
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url(./img/tile.svg);
+    background-size: 100%;
+}
+
+.tile-display:checked ~ .button-tile
+{
+    display: none;
+}
+
+.list-display:checked ~ .button-list
+{
+    display: none;
+}
+
+main
+{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 60em;
+    text-align: center;
+}
+
+.tile-display:checked ~ main .detailed-description
+{
+    display: none;
+}
+
+.list-display:checked ~ main .short-description
+{
+    display: none;
+}
+
+.card
+{
+    margin: 5px;
+    padding-bottom: 0;
+    display: inline-block;
+    width: 217px;
+    height: 286px;
+    box-shadow: 0 0 5px #cecece;
+}
+
+.list-display:checked ~ main .card
+{
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 15px;
+    display: block;
+    width: 434px;
+    height: auto;
+    box-shadow: 0 0 5px #cecece;
+}
+
+.list-display:checked ~ main .image
+{
+    height: 19em;
+}
+
+.card:hover
+{
+    box-shadow: 0 0 5px #313131;
+}
+
+.image
+{
+    overflow: hidden;
+    height: 8em;
+    border-bottom: 1px solid #dadada;
+}
+
+.image img
+{
+    position: relative;
+    width: 120%;
+    transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+}
+
+.image img:hover
+{
+    cursor: pointer;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.card h2
+{
+    margin: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+    font-family: 'Segoe UI', sans-serif;
+    color: #353535;
+}
+
+.card p
+{
+    margin: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #494949;
+}
+
+.short-description p:first-child
+{
+    padding-bottom: 10px;
+}
+
+.card h2:hover
+{
+    color: #426ab4;
+}
+
+.card h2 a
+{
+    color: #353535;
+    text-decoration: none;
+}
+
+.card h2 a:hover
+{
+    color: #426ab4;
+}

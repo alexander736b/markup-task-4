@@ -3,7 +3,183 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Про котиков»</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <input type="radio" class="tile-display" name="card-display" id="tile" checked>
+    <label class="button-tile" for="tile"></label>
+    <input type="radio" class="list-display" name="card-display" id="list">
+    <label class="button-list" for="list"></label>
+    <main>
+        <article class="card">
+            <div class="image">
+                <img src="img/korat.jpg" alt="Кошка Беатриче">
+            </div>
+            <h2><a href="#">Беатриче</a></h2>
+            <div class="short-description">
+                <p>Статус: ищет хозяина</p>
+                <p>Возраст: 2 года</p>
+                <p>Порода: корат</p>
+                <p>Болезни: нет</p>
+            </div>
+            <div class="detailed-description">
+                <p>Энергичная, умная и ласковая.</p>
+                <p>Возраст 2 года.</p>
+                <p>Не любит громкие и резкие звуки.</p>
+            </div>
+        </article>
+        <article class="card">
+            <div class="image">
+                <img src="img/singapura.jpg" alt="Кошка Гертруда">
+            </div>
+            <h2><a href="#">Гертруда</a></h2>
+            <div class="short-description">
+                <p>Статус: ищет хозяина</p>
+                <p>Возраст: около 10 месяцев</p>
+                <p>Порода: сингапурская</p>
+                <p>Болезни: нет</p>
+            </div>
+            <div class="detailed-description">
+                <p>Дружелюбная, миролюбивая, пугливая.</p>
+                <p>Возраст ~10 месяцев.</p>
+            </div>
+        </article>
+        <article class="card">
+            <div class="image">
+                <img src="img/bengal.jpg" alt="Кошка Жоржетта">
+            </div>
+            <h2><a href="#">Жоржетта</a></h2>
+            <div class="short-description">
+                <p>Статус: ищет хозяина</p>
+                <p>Возраст: около 1 года</p>
+                <p>Порода: бенгальская</p>
+                <p>Болезни: нет</p>
+            </div>
+            <div class="detailed-description">
+                <p>Игривая, активная, ловкая.</p>
+                <p>Возраст ~1 год.</p>
+                <p>Обожает играть с водой.</p>
+            </div>
+        </article>
+        <article class="card">
+            <div class="image">
+                <img src="img/siberian.jpg" alt="Кот Арсений-Котовский">
+            </div>
+            <h2><a href="#">Арсений-Котовский</a></h2>
+            <div class="short-description">
+                <p>Статус: ищет хозяина</p>
+                <p>Возраст: 1 год</p>
+                <p>Порода: сибирская</p>
+                <p>Болезни: нет</p>
+            </div>
+            <div class="detailed-description">
+                <p>Умный и послушный.</p>
+                <p>Возраст 1 год.</p>
+                <p>Отличный охотник.</p>
+            </div>
+        </article>
+        <article class="card">
+            <div class="image">
+                <img src="img/highlend-fold.jpg" alt="Кот Тамерлан">
+            </div>
+            <h2><a href="#">Тамерлан</a></h2>
+            <div class="short-description">
+                <p>Статус: ищет хозяина</p>
+                <p>Возраст: 2 года</p>
+                <p>Порода: хайленд фолд</p>
+                <p>Болезни: нет</p>
+            </div>
+            <div class="detailed-description">
+                <p>Интеллигентна, мягка, спокойна и жизнерадостна.</p>
+                <p>Возраст 2 года.</p>
+                <p>Комфортно сосуществует со всеми членами семьи.</p>
+            </div>
+        </article>
+        <article class="card">
+            <div class="image">
+                <img src="img/egyptian-mau.jpg" alt="Кошка Терпсихора">
+            </div>
+            <h2><a href="#">Терпсихора</a></h2>
+            <div class="short-description">
+                <p>Статус: ищет хозяина</p>
+                <p>Возраст: 1 год</p>
+                <p>Порода: египетская мау</p>
+                <p>Болезни: нет</p>
+            </div>
+            <div class="detailed-description">
+                <p>Преданная.</p>
+                <p>Возраст 1 год.</p>
+                <p>Любит ноутбуки.</p>
+            </div>
+        </article>
+        <article class="card">
+            <div class="image">
+                <img src="img/norwegian-forest.jpeg" alt="Кот Фердинанд">
+            </div>
+            <h2><a href="#">Фердинанд</a></h2>
+            <div class="short-description">
+                <p>Статус: ищет хозяина</p>
+                <p>Возраст: 2 года</p>
+                <p>Порода: норвежская лесная</p>
+                <p>Болезни: нет</p>
+            </div>
+            <div class="detailed-description">
+                <p>Дружелюбный, обладает мягким нравом и хорошими манерами.</p>
+                <p>Возраст 2 года.</p>
+                <p>Любит поговорить, обожает играть и любит поохотиться на бантики.</p>
+            </div>
+        </article>
+        <article class="card">
+            <div class="image">
+                <img src="img/bombei.jpg" alt="Кошка Шерри">
+            </div>
+            <h2><a href="#">Шерри</a></h2>
+            <div class="short-description">
+                <p>Статус: ищет хозяина</p>
+                <p>Возраст: 2 месяца</p>
+                <p>Порода: бомбейская</p>
+                <p>Болезни: нет</p>
+            </div>
+            <div class="detailed-description">
+                <p>Спокойная.</p>
+                <p>Возраст 2 месяца.</p>
+                <p>Обожает колени своего хозяина.</p>
+            </div>
+        </article>
+        <article class="card">
+            <div class="image">
+                <img src="img/american-curl.jpg" alt="Кошка Эзра">
+            </div>
+            <h2><a href="#">Эзра</a></h2>
+            <div class="short-description">
+                <p>Статус: ищет хозяина</p>
+                <p>Возраст: около 1 года</p>
+                <p>Порода: американский керл</p>
+                <p>Болезни: нет</p>
+            </div>
+            <div class="detailed-description">
+                <p>Уравновешенная, интеллигентная.</p>
+                <p>Возраст ~1 года.</p>
+                <p>Обожает детей.</p>
+            </div>
+        </article>
+        <article class="card">
+            <div class="image">
+                <img src="img/shotlandskaya-vislouhaya.jpg" alt="Кот Яся">
+            </div>
+            <h2><a href="#">Яся</a></h2>
+            <div class="short-description">
+                <p>Статус: ищет хозяина</p>
+                <p>Возраст: 1 год</p>
+                <p>Порода: скоттиш Фолд</p>
+                <p>Болезни: нет</p>
+            </div>
+            <div class="detailed-description">
+                <p>Интеллигентный</p>
+                <p>Возраст 1 год.</p>
+                <p>Отлично дружит с другими домашними животными.</p>
+            </div>
+        </article>
+    </main>
 </body>
 </html>
