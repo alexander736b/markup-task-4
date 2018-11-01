@@ -98,18 +98,18 @@ main
     position: relative;
     width: 120%;
     transition: all 1s ease-out;
-    -moz-transition: all 1s ease-out;
-    -o-transition: all 1s ease-out;
-    -webkit-transition: all 1s ease-out;
+    -moz-transition: 1s ease-out;
+    -o-transition: 1s ease-out;
+    -webkit-transition: 1s ease-out;
 }
 
 .image img:hover
 {
     cursor: pointer;
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -o-transform: scale(1.1);
+    transform: scale3d(1.1, 1.1, 0.2);
+    -webkit-transform: scale3d(1.1, 1.1, 0.2);
+    -moz-transform: scale3d(1.1, 1.1, 0.2);
+    -o-transform: scale3d(1.1, 1.1, 0.2);
 }
 
 .card h2
